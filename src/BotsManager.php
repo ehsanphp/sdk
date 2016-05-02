@@ -259,7 +259,6 @@ class BotsManager
                 );
 
                 continue;
-
             }
 
             // If this command is actually a shared command, we'll extract the full

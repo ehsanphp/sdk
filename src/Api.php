@@ -1276,7 +1276,6 @@ class Api
         if ($fileUpload) {
             $params = ['multipart' => $params];
         } else {
-
             if (array_key_exists('reply_markup', $params)) {
                 $params['reply_markup'] = (string)$params['reply_markup'];
             }

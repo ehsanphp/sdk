@@ -25,5 +25,4 @@ use Telegram\Bot\Objects\InlineQuery\InlineBaseObject;
  */
 class InputVenueMessageContent extends InlineBaseObject
 {
-
 }

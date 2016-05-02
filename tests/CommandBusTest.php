@@ -157,5 +157,4 @@ class CommandBusTest extends \PHPUnit_Framework_TestCase
         $this->assertArrayHasKey('mycommandwithdependency', $allCommands);
         $this->assertInstanceOf(Command::class, $allCommands['mycommandwithdependency']);
     }
-
 }

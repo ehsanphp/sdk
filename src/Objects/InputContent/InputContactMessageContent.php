@@ -21,5 +21,4 @@ use Telegram\Bot\Objects\InlineQuery\InlineBaseObject;
  */
 class InputContactMessageContent extends InlineBaseObject
 {
-
 }
