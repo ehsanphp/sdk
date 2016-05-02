@@ -29,7 +29,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Telegram\\Bot\\Tests\\": "tests/"
+      "Telegram\\Bot\\": "tests/"
     }
   },
   "suggest": {
