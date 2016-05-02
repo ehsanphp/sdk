@@ -1,26 +1,47 @@
 {
-  "name": "irazasyed/telegram-bot-sdk",
-  "description": "The Unofficial Telegram Bot API PHP SDK",
-  "keywords": ["telegram", "telegram bot", "telegram bot api", "telegram sdk", "telegram php", "laravel telegram", "laravel"],
+  "name": "telegram-bot-kit/sdk",
   "type": "library",
-  "homepage": "https://github.com/irazasyed/telegram-bot-sdk",
+  "description": "Telegram Bot API PHP SDK - Powered By Telegram Bot Kit, A Powerful PHP Telegram Bot Kit",
+  "keywords": [
+    "irazasyed",
+    "telegram bot",
+    "php telegram bot",
+    "telegram-bot-kit",
+    "telegram bot api",
+    "telegram bot php",
+    "telegram bot sdk",
+    "laravel telegram",
+    "laravel telegram bot",
+    "telegram-bot-kit/sdk",
+    "irazasyed/telegram-bot-sdk"
+  ],
+  "homepage": "https://github.com/telegram-bot-kit/sdk",
+  "support": {
+    "forum": "https://phpchat.co",
+    "docs": "https://telegram-bot-sdk.readme.io/docs",
+    "source": "https://github.com/telegram-bot-kit/sdk",
+    "issues": "https://github.com/telegram-bot-kit/sdk/issues"
+  },
   "license": "BSD-3-Clause",
   "authors": [
     {
       "name": "Syed Irfaq R.",
       "email": "syed+gh@lukonet.com",
-      "homepage": "https://github.com/irazasyed"
+      "homepage": "https://github.com/irazasyed",
+      "role": "Developer"
     }
   ],
   "require": {
-    "php": ">=5.5.0",
+    "php": "~5.5||~7.0",
     "guzzlehttp/guzzle": "~6.0",
     "illuminate/support": "~5.0",
     "league/event": "^2.1"
   },
   "require-dev": {
-    "phpunit/phpunit": "^4.8 || ^5.0",
-    "phpspec/prophecy": "^1.5"
+    "phpunit/phpunit" : "~4.0||~5.0",
+    "phpspec/prophecy": "^1.5",
+    "scrutinizer/ocular": "~1.1",
+    "squizlabs/php_codesniffer": "~2.6"
   },
   "autoload": {
     "psr-4": {
@@ -33,7 +54,7 @@
     }
   },
   "suggest": {
-    "irazasyed/larasupport": "Allows you to use any Laravel Package in Lumen by adding support!",
+    "irazasyed/larasupport": "Allows you to use any Laravel Package in Lumen!",
     "illuminate/container": "Hold dependencies to be injected in commands constructors"
   },
   "scripts": {
@@ -49,6 +70,6 @@
   "config": {
     "preferred-install": "dist"
   },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "minimum-stability": "dev"
 }
