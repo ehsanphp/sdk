@@ -959,6 +959,8 @@ class Api
      *
      * @see setWebhook
      *
+     * @param bool $emitUpdateWasReceivedEvent
+     *
      * @return Update
      */
     public function getWebhookUpdates($emitUpdateWasReceivedEvent = true)
@@ -1000,7 +1002,8 @@ class Api
      * @link https://core.telegram.org/bots/api#getupdates
      *
      * @param array  $params
-     * @param bool  $emitUpdateWasReceivedEvents
+     * @param bool   $emitUpdateWasReceivedEvents
+     *
      * @var int|null $params ['offset']
      * @var int|null $params ['limit']
      * @var int|null $params ['timeout']
@@ -1195,15 +1198,15 @@ class Api
         if ($object === null) {
             return null;
         }
-        
+
         if ($object instanceof Update) {
             if ($object->has('message')) {
                 $object = $object->getMessage();
-            }else{
+            } else {
                 throw new \InvalidArgumentException('The object must be or contain a message');
             }
         }
-        
+
         return $object->isType($type);
     }
 
@@ -1224,7 +1227,7 @@ class Api
         if ($object === null) {
             return null;
         }
-        
+
         if ($object instanceof Update) {
             if ($object->has('message')) {
                 $object = $object->getMessage();
