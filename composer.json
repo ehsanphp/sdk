@@ -37,7 +37,9 @@
     "illuminate/container": "Hold dependencies to be injected in commands constructors"
   },
   "scripts": {
-    "test": "phpunit"
+    "test": "./vendor/bin/phpunit",
+    "check-codestyle": "./vendor/bin/phpcs --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1",
+    "fix-codestyle": "./vendor/bin/phpcbf --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1"
   },
   "extra": {
     "branch-alias": {
